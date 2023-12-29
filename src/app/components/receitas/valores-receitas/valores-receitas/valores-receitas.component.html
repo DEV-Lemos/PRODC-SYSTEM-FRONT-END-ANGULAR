@@ -1,0 +1,118 @@
+<h1 mat-dialog-title>Cadastro de Valores Mensais</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Janeiro</mat-label>
+    <input
+      currencyMask
+      matInput
+      [(ngModel)]="dataValores.jan"
+      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Fevereiro</mat-label>
+    <input
+      currencyMask
+      matInput
+      [(ngModel)]="dataValores.fev"
+      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Março</mat-label>
+    <input
+      currencyMask
+      matInput
+      [(ngModel)]="dataValores.mar"
+      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Abril</mat-label>
+    <input
+      matInput
+      currencyMask
+      [(ngModel)]="dataValores.abr"
+      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Maio</mat-label>
+    <input
+      matInput
+      currencyMask
+      [(ngModel)]="dataValores.mai"
+      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Junho</mat-label>
+    <input
+      matInput
+      currencyMask
+      [(ngModel)]="dataValores.jun"
+      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Julho</mat-label>
+    <input
+      matInput
+      currencyMask
+      [(ngModel)]="dataValores.jul"
+      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Agosto</mat-label>
+    <input
+      matInput
+      currencyMask
+      [(ngModel)]="dataValores.ago"
+      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Setembro</mat-label>
+    <input
+      matInput
+      currencyMask
+      [(ngModel)]="dataValores.sete"
+      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Outubro</mat-label>
+    <input
+      matInput
+      currencyMask
+      [(ngModel)]="dataValores.outu"
+      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Novembro</mat-label>
+    <input
+      matInput
+      currencyMask
+      [(ngModel)]="dataValores.nov"
+      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Dezembro</mat-label>
+    <input
+      matInput
+      currencyMask
+      [(ngModel)]="dataValores.dez"
+      [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+    />
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="cancelando()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="dataValores" cdkFocusInitial>
+    Salvar
+  </button>
+</div>
+

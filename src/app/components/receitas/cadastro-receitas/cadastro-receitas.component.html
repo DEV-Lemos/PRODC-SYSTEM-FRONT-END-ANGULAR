@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Cadastro de Receitas</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Descrição</mat-label>
+    <input matInput [(ngModel)]="data.descricao" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Tipo</mat-label>
+    <mat-select [(ngModel)]="data.tipo">
+      @for (tipos of tipos; track tipos) {
+      <mat-option [value]="tipos.value">{{ tipos.viewValue }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="cancelando()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Salvar</button>
+</div>

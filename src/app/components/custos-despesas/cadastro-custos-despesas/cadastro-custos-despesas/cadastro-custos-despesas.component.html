@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Cadastro de Custos/Despesas</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Numero</mat-label>
+    <input matInput [(ngModel)]="data.numero" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Nome</mat-label>
+    <input matInput [(ngModel)]="data.nome" />
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="cancelando()">Cancelar</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Salvar</button>
+</div>

@@ -1,0 +1,49 @@
+.card-container {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-left: 5px solid rgb(201, 1, 1);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-container-receita {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-left: 5px solid rgb(1, 201, 51);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-container:hover {
+  cursor: pointer;
+  border-left: 7px solid rgb(201, 1, 1);
+  transform: scale(1.03);
+}
+
+.card-container-receita:hover {
+  cursor: pointer;
+  border-left: 7px solid rgb(1, 201, 51);
+  transform: scale(1.03);
+}
+
+.card-title {
+  color: rgba(27, 27, 27, 0.856);
+  font-size: 30px;
+  font-family: "Spinnaker", sans-serif;
+}
+
+.center-title {
+  position: relative;
+}
+
+.card-description {
+  color: rgba(116, 114, 114, 0.856);
+  font-size: 15px;
+  font-family: "Spinnaker", sans-serif;
+}
